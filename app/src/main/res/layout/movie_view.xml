@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="200dp"
+        android:layout_height="310dp"
+        app:cardCornerRadius="20dp"
+        android:backgroundTint="#413b6b"
+        app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imgmovie"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/movie"
+            android:scaleType="centerCrop"
+            />
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgmovie">
+
+        <TextView
+            android:id="@+id/txtmovie"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Title :"
+            android:textSize="20dp"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/moviename"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="avtar"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/txtmovie"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl2">
+
+            <TextView
+                android:id="@+id/txtcategory"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Category :"
+                android:textSize="20dp"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/category"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="avtar"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@id/txtcategory"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl3">
+
+            <TextView
+                android:id="@+id/txtyear"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Year :"
+                android:textSize="20dp"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/year"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="avtar"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@id/txtyear"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

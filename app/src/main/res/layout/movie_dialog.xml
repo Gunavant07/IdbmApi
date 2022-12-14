@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#413b6b">
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card1"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:id="@+id/imgmovie"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:src="@drawable/movie"
+                />
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:id="@+id/rl2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/card1">
+
+                <TextView
+                    android:id="@+id/txtmovie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Title :"
+                    android:textSize="20dp"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/moviename"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="avtar"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@id/txtmovie"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl2">
+
+                <TextView
+                    android:id="@+id/txtcategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Category :"
+                    android:textSize="20dp"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/category"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="avtar"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@id/txtcategory"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl3">
+
+                <TextView
+                    android:id="@+id/txtyear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Year :"
+                    android:textSize="20dp"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/year"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="avtar"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@id/txtyear"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+</RelativeLayout>
